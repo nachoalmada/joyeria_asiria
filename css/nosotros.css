@@ -1,0 +1,40 @@
+.n-first-section {
+    background-color: #ffbfa3;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.presentacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-title {
+    color: #a26a00;
+    padding: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.p-parraf {
+    padding: 20px;
+    font-size: 1.5rem;
+
+}
+.n-second-section {
+    background-color: lightgrey;
+}
+.fila{
+    display: flex;
+    flex-direction: row;
+}
+.n-third-section {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    .n-first-section {
+        flex-direction: column;
+    }
+}

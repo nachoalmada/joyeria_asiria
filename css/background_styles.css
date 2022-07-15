@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Belleza');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Belleza', sans-serif;
+}
+
+html {
+    background-color: #DFDFDF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    min-width: 300px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.btn {
+    border-radius: 2px;
+    padding: 10px ;
+    font-size: 1.5rem;
+    width: 300px;
+    text-decoration: none;
+    text-align: center;
+    background-color: silver;
+    border: gray solid 1px;
+    color: #a26a00;
+}
+.btn:hover {
+    background-color: lightgray;
+}
+.btn:active {
+    background-color: gray;
+}
+.footer {
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2f2f2f;
+    padding: 5px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.footer-1 .footer-title {
+    text-transform: uppercase;
+    color: lightsalmon;
+    padding: 10px;
+    width: 100%;
+}
+.footer-1 p {
+    color: gainsboro;
+    padding: 20px;
+    
+}
+.footer-1 ul li {
+    list-style-type: none ;
+    height: 10%;
+    
+}
+.footer-1 .redes ul li {
+    display: inline;
+    
+}
+.footer-1 .flinkc{
+    text-decoration: none;
+    color: coral;
+}
+.footer-1 .flinkc:hover {
+    color: lightsalmon;
+}
+.fbtn {
+    border-radius: 2px;
+    padding: 5px ;
+    width: 50%;
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: coral;
+    border: lightsalmon solid 1px;
+    color: #0c0c0c;
+}
+.fbtn:hover {
+    background-color: lightsalmon;
+    color: #2f2f2f;
+}
+.fbtn:active {
+    background-color: gray;
+}
+.footer-1 a img {
+    background-color: coral;
+    border-radius: 100%;
+    padding: 5px;
+}
+.footer-1 a img:hover {
+    background-color: lightsalmon;
+}
+.footer-2 {
+    background-color: #0c0c0c;
+    color: gainsboro;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+@media (max-width: 768px) {
+    .main-container {
+        padding-top: 2.8rem;
+    }
+    .footer-1 {
+        flex-direction: column;
+    }
+    .footer-1 .redes ul li {
+        display: block;
+    }
+    .redes{
+        gap: 20px;
+    }
+}

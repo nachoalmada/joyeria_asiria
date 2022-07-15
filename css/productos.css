@@ -1,0 +1,85 @@
+/* titulo y barra de busqueda (LA BARRA DE BUSQUEDA SERA FUNCIONAL A FUTURO integrada con base de datos)*/
+.p-first-section {
+    background-color: #ffbfa3;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p-title {
+    color: #a26a00;
+    padding: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.searchbar input {
+    height: 50px;
+    width: 30%;
+    font-size: 1.5rem;
+    border: #ffbfa3 solid 0px;
+    outline: #a26a00 solid 1px;
+    
+}
+#search {
+    padding: 9px;
+    width: auto;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: coral;
+    border: #ffbfa3 solid 0px;
+    outline: #a26a00 solid 1px;
+}
+#search:hover {
+    background-color: lightsalmon;
+}
+#search:active {
+    background-color: orangered;
+}
+
+/* segunda seccion*/
+.p-second-section {
+    padding: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p-subtitle {
+    color: #a26a00;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 202px);
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: #a26a00 solid 1px;
+    background-color: whitesmoke;
+}
+.card h4 {
+    text-align: center;
+    color: #a26a00;
+    padding: 10px;
+}
+.card a {
+    text-decoration: none;
+}
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}

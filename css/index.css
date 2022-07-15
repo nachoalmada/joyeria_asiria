@@ -1,0 +1,156 @@
+
+.first-section {
+    width: 100%;
+    margin: auto;
+    background-color: whitesmoke;
+    
+}
+
+.second-section {
+    padding: 50px;
+    background-color: #ffbfa3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.third-section {
+    padding: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.f4th-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.controles4 {
+    padding: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.controles4-img {
+    width: 100%;
+    background-color: #ffbfa3;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.controles4-img img {
+    margin: auto;
+}
+.parraf{
+    color: black;
+    padding: 50px;
+    font-size: 2rem;
+    text-align: center;
+}
+.title-section, .btn-section {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.title-section p {
+    color: #a26a00;
+    font-size: 3rem;
+}
+.ideas{
+    font-size: 2rem !important;
+}
+.novedades {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 202px);
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.novedades-card{
+    display: flex;
+    flex-direction: column;
+    border: #a26a00 solid 1px;
+    background-color: whitesmoke;
+}
+.novedades-card h4 {
+    text-align: center;
+    color: #a26a00;
+    padding: 10px;
+}
+.novedades-card a {
+    text-decoration: none;
+}
+.novedades-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*grid ideas para regalos*/
+.nov1 {
+    grid-template-columns: repeat(auto-fill, 302px);
+    gap: 50px;
+}
+/*img ideas para regalos*/
+.nov1 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .f4th-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .novedades {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 302px);
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+        padding: 25px;
+    }
+    
+    .novedades-card{
+        display: flex;
+        flex-direction: column;
+        border: #a26a00 solid 1px;
+        background-color: whitesmoke;
+    }
+    .novedades-card h4 {
+        text-align: center;
+        color: #a26a00;
+        padding: 10px;
+    }
+    .novedades-card a {
+        text-decoration: none;
+    }
+    .novedades-card img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    /*grid ideas para regalos*/
+    .nov1 {
+        grid-template-columns: repeat(auto-fill, 300px);
+        gap: 50px;
+    }
+    /*img ideas para regalos*/
+    .nov1 img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+}

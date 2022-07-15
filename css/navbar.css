@@ -1,0 +1,176 @@
+/* 
+
+ffbfa3
+ff8957
+a26a00
+
+*/
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffbfa3;
+    color: #a26a00;
+    width: 100%;
+    z-index: 1;
+    border-bottom: #a26a00 solid 1px;
+    box-shadow: inset ;
+}
+.logo{
+    display: flex;
+}
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.navbar img {
+    height: 2.5rem;
+}
+.navbar-links {
+    height: 100%;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #a26a00;
+    text-shadow: #ffbfa3 1px 1px;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #ff8957;
+    transition: 0.3s ease;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #a26a00;
+    border-radius: 10px;
+}
+/* 
+
+ffbfa3
+ff8957
+a26a00
+
+*/
+/* DROPDOWN MENU */
+.catalogo {
+    position: relative;
+}
+.dropdown {
+    
+    background-color: #ff8957;
+    
+    padding: 1em 0;
+    position: fixed;
+    top: 50px;
+    flex-direction: column;
+    align-content: center;
+
+}
+.dropdown li + li {
+    margin-top: 10px;
+}
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 11em;
+    text-align: center;
+    display: none;
+}
+
+
+.dropdown li:hover {
+    background-color: #ffbfa3;
+}
+.catalogo:hover .dropdown li {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        padding-left: 10px;
+    }
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        width: 100%;
+        display: none;
+        
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        position: relative;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+    
+    .active {
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    .catalogo {
+        position: relative;
+    }
+
+    .dropdown {
+        position: relative;
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    .catalogo:hover .dropdown li {
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+    }
+    .catalogo:hover .dropdown {
+        visibility: visible;
+    }
+}
